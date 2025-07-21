@@ -1,0 +1,5 @@
+[keyboard]
+path = "/dev/input/event3"
+
+[keysound]
+path = "~/Music/keysound/typing.mp3"
