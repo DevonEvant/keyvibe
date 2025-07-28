@@ -2,6 +2,37 @@
 
 KeyVibe is an innovative application designed to enhance your typing experience on Wayland-based systems. It plays satisfying keyboard sound effects globally whenever you press any key, giving you tactile feedback through audio. Whether you're writing, coding, or chatting, KeyVibe adds an extra layer of immersion by simulating the feel of a mechanical keyboard or other custom sound profiles. Perfect for users who want to bring more personality and responsiveness to their keyboard input on Wayland.
 
+# Building
+
+#### Deps
+
+You need the following dependencies
+
+- cargo (rust-lang)
+
+#### Building
+
+```bash
+cargo build --release
+```
+
+And you can obtain execution file at "./target/release/keyvibe"
+
+`The program only avaliable on Wayland`
+
+# Configration
+
+```toml
+# At ~/.config/keyvibe/config.toml
+
+[keyboard]
+path = "/dev/input/event3"
+
+[keysound]
+path = "~/Music/keysound/typing.mp3"
+
+```
+
 ---
 
 ```txt
