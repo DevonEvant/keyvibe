@@ -2,16 +2,16 @@ use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]
 pub struct Config {
-    pub keyboard: Keyboard,
-    pub keysound: Keysound,
+    pub keyboard: Option<Keyboard>,
+    pub keysound: Option<Keysound>,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct Keyboard {
-    pub path: String,
+    pub path: Option<String>,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct Keysound {
-    pub path: String,
+    pub path: Option<String>,
 }
